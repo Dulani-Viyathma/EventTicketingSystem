@@ -1,0 +1,24 @@
+<p>configuration-form works!</p>
+<div>
+    <h2>Configuration Settings</h2>
+    <form (submit)="onSubmit()">
+      <div>
+        <label for="totalTickets">Total Number of Tickets:</label>
+        <input type="number" [(ngModel)]="config.totalTickets" name="totalTickets" required>
+      </div>
+      <div>
+        <label for="ticketReleaseRate">Ticket Release Rate:</label>
+        <input type="number" [(ngModel)]="config.ticketReleaseRate" name="ticketReleaseRate" required>
+      </div>
+      <div>
+        <label for="customerRetrievalRate">Customer Retrieval Rate:</label>
+        <input type="number" [(ngModel)]="config.customerRetrievalRate" name="customerRetrievalRate" required>
+      </div>
+      <div>
+        <label for="maxTicketCapacity">Maximum Ticket Capacity:</label>
+        <input type="number" [(ngModel)]="config.maxTicketCapacity" name="maxTicketCapacity" required>
+      </div>
+      <button type="submit">Start System</button>
+    </form>
+  </div>
+  
